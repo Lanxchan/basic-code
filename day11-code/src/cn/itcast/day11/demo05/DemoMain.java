@@ -20,5 +20,13 @@ public class DemoMain {
         };
         obj.method();
 
+        new MyInterface(){
+
+            @Override
+            public void method() {
+                System.out.println("匿名对象+匿名内部类");
+            }
+        }.method();//匿名对象+匿名内部类
+
     }
 }
